@@ -3,42 +3,83 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>syncCtoPro by menatwork</title>
-
+    <title>syncCtoPro Dokumentation</title>
+    <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="msapplication-TileImage" content="images/win-8.png" />
+    <meta name="msapplication-TileColor" content="#7acac1" />
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+    <!--
+
+      Copyright © 2014 by MEN AT WORK
+      Visit our agency website at http://www.men-at-work.de for more information
+
+    //-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>syncCtoPro</h1>
-        <p>The pro edition of syncCto</p>
+    <div id="wrapper">
+      <div id="container">
+        <aside>
+          <h1>syncCtoPro</h1>
+          <ul id="nav">
+            <li><a href="#about">Über syncCtoPro</a></li>
+            <li><a href="#requirements">Systemvoraussetzungen</a></li>
+            <li><a href="#startup">Einfache Startup-Anleitung</a></li>
+            <li><a href="#workflow">Workflow-Beispiele</a></li>
+            <li><a href="#changelog">Versionshistorie</a></li>
+            <li><a href="#screenshots">Screenshots</a></li>
+          </ul>
+        </aside>
+        <section>
+          <h2 id="about">Über syncCtoPro</h2>
+          <p>syncCto bietet die Möglichkeit mehrere Contao-Installationen auf Basis einer Grund-Installation zu synchronisieren. Alle Aktionen können bequem im Backend durchgeführt werden. Durch die Integration in das Contao Rechtesystem können auch Redakteure eine Auswahl vorher definierter Datenbank-Tabellen und Dateien synchronisieren.</p>
 
-        <p class="view"><a href="https://github.com/menatwork/sync-doku">View the Project on GitHub <small>menatwork/sync-doku</small></a></p>
+          <p>Ein integrierter Backup-Manager sichert ausgewählte Datenbank-Tabellen, wahlweise die gesamte Contao-Installation oder nur die persönlichen Daten. Angelegte Backups können durch den Backup-Manager auch wieder importiert werden. Durch die Verwendung von syncCto können Redakteure schnell und einfach in einem Preview-System arbeiten und bei Vollendung der Arbeit den aktuellen und freigegebenen Stand zum Live-System synchronisieren.</p>
+
+          <p>syncCtoPro greift dieses Konzept auf und erweitert den Synchronisationsvorgang um eine Diff-View. So können Redakteure wie von Contao 3 gewohnt Inhalte selektiv auswählen
+
+          <p class="button"><a href="http://www.contao-synccto.com/">Projekt Website</a></p>
+
+          <p>Auf Anfrage oder im Falle eines Lizenzkaufs, senden wir Ihnen die Endbenutzer-Lizenzvereinbarungen (EULA) zu.</p>
+
+          <h2 id="requirements">Systemvoraussetzungen</h2>
+          <p>syncCto und syncCtoPro benötigen eine Auswahl an Bibliotheken und Extensions:</p>
+          <ul>
+            <li>Contao 2.11 oder höher</li>
+            <li>...</li>
+          </ul>
+
+          <h2 id="startup">Einfache Startup-Anleitung</h2>
 
 
-        <ul>
-          <li><a href="https://github.com/menatwork/sync-doku/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/menatwork/sync-doku/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/menatwork/sync-doku">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+          <h2 id="workflow">Workflow-Beispiele</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/menatwork">menatwork</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
+          <h2 id="changelog">Versionshistorie</h2>
+
+          <h3>syncCtoPro</h3>
+
+          <h3>syncCto</h3>
+
+          <h2 id="screenshots">Screenshots</h2>
+
+        </section>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+        $('html, body').animate({scrollTop: $target.offset().top - 30 }, 'slow');
+      });
+    });
+    </script>
   </body>
 </html>
